@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nagarjun G — Python developer building reliable backend and full-stack products." />
+    <title>Nagarjun G — Python Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hero { position: relative; }
+      .hero h1 { position: relative; z-index: 1; max-width: 780px; }
+      .portrait { position: absolute; right: 0; top: 124px; width: 268px; margin: 0; z-index: 0; border: 1px solid var(--line); background: var(--panel); padding: 8px; transform: rotate(3deg); box-shadow: 12px 14px 0 #1d251e; animation: portrait-in 1s cubic-bezier(.2,.8,.2,1) both; }
+      .portrait img { display: block; width: 100%; height: 322px; object-fit: cover; object-position: 50% 26%; filter: saturate(.82) contrast(1.04); }
+      .portrait figcaption { display: flex; justify-content: space-between; padding: 9px 2px 2px; color: #bdc4ba; font: 8px var(--mono); letter-spacing: .05em; }
+      .portrait figcaption span { color: var(--lime); }
+      @keyframes portrait-in { from { opacity: 0; transform: translateY(24px) rotate(3deg); } to { opacity: 1; transform: translateY(0) rotate(3deg); } }
+      @media (max-width: 700px) { .hero h1 { max-width: none; } .portrait { position: relative; right: auto; top: auto; width: min(245px,72vw); margin: 34px 0 -12px auto; } .portrait img { height: 290px; } .hero-bottom { margin-top: 42px; } }
+    </style>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <header class="nav wrap">
+      <a class="brand" href="#top">NG<span>.</span></a>
+      <nav><a href="#work">Selected work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+      <a class="nav-cta" href="Resume102026.pdf" download>Resume ↗</a>
+    </header>
+    <main id="top">
+      <section class="hero wrap">
+        <div class="status reveal"><i></i> Available for interesting problems</div>
+        <p class="eyebrow reveal">Python developer · Tamil Nadu, India</p>
+        <h1 class="reveal">I build the <em>systems</em><br />behind great products.</h1>
+        <figure class="portrait reveal">
+          <img src="WhatsApp%20Image%202026-09-08%20at%2018.59.52.jpeg" alt="Nagarjun G" />
+          <figcaption>PYTHON DEVELOPER <span>✦</span> 2026</figcaption>
+        </figure>
+        <div class="hero-bottom reveal">
+          <p>Backend-focused developer with 3.5+ years of experience shipping dependable APIs, data-driven applications, and full-stack web products.</p>
+          <a class="round-link" href="#work" aria-label="See my work">↓</a>
+        </div>
+        <div class="ticker" aria-hidden="true"><div>DJANGO <b>✦</b> FASTAPI <b>✦</b> POSTGRESQL <b>✦</b> AWS <b>✦</b> DOCKER <b>✦</b> REST APIs <b>✦</b> DJANGO <b>✦</b> FASTAPI <b>✦</b></div></div>
+      </section>
+
+      <section class="metrics wrap reveal" aria-label="Career highlights">
+        <div><strong>3.5<span>+</span></strong><small>years building software</small></div>
+        <div><strong>10K<span>+</span></strong><small>daily verifications handled</small></div>
+        <div><strong>10<span>+</span></strong><small>products &amp; platforms delivered</small></div>
+      </section>
+
+      <section id="work" class="work wrap">
+        <div class="section-heading reveal"><p class="eyebrow">01 / Selected work</p><h2>Built for scale.<br />Designed to <em>matter.</em></h2></div>
+        <div class="project-grid">
+          <article class="project featured reveal"><div class="project-art art-ever"><span>01</span><div class="verify-card"><i></i><b>Document verified</b><small>Blockchain record confirmed</small></div><div class="blocks"></div></div><div class="project-copy"><div><p class="eyebrow">Everity / Blockchain platform</p><h3>Trust, verified in real time.</h3></div><p>Built REST APIs and WebSocket-based real-time verification workflows for a blockchain document platform handling 10K+ daily checks.</p><ul><li>Python</li><li>REST APIs</li><li>WebSockets</li></ul></div></article>
+          <article class="project reveal"><div class="project-art art-ai"><span>02</span><div class="ai-prompt">route / <b>claude-3.5</b><br /><small>fallback enabled · 42ms</small></div></div><div class="project-copy"><p class="eyebrow">Chatbot / RAG gateway</p><h3>LLM traffic, made legible.</h3><p>A Portkey and LiteLLM-like platform for model routing, prompt tracking, analytics, and API-key management.</p><ul><li>Django</li><li>React</li><li>AI APIs</li></ul></div></article>
+          <article class="project reveal"><div class="project-art art-commerce"><span>03</span><div class="receipt"><b>Order confirmed</b><span>TXN_84F20</span><i></i><small>Payment settled · webhook received</small></div></div><div class="project-copy"><p class="eyebrow">HyathiHomes / Commerce</p><h3>Transactions without friction.</h3><p>Production e-commerce workflows with payment gateway integration, webhooks, and end-to-end order support.</p><ul><li>Python</li><li>Payments</li><li>Webhooks</li></ul></div></article>
+        </div>
+      </section>
+
+      <section id="about" class="about wrap">
+        <div class="about-intro reveal"><p class="eyebrow">02 / The toolkit</p><h2>From the first endpoint to <em>production.</em></h2></div>
+        <div class="skills reveal">
+          <div><span>Backend</span><p>Django · DRF · FastAPI · Flask · REST APIs · Microservices</p></div>
+          <div><span>Data</span><p>PostgreSQL · MySQL · Redis · Celery · Database design</p></div>
+          <div><span>Cloud &amp; delivery</span><p>AWS · Docker · Docker Compose · Linux · Git · OpenAPI</p></div>
+        </div>
+        <div class="timeline reveal"><p class="eyebrow">Career path</p><div><time>2026 — now</time><strong>Software Developer</strong><span>OneData Software Solutions, Coimbatore</span></div><div><time>2023 — 2026</time><strong>Associate Software Developer</strong><span>OneData Software Solutions, Coimbatore</span></div><div><time>2023</time><strong>Python Developer Intern</strong><span>OneData Software Solutions, Coimbatore</span></div></div>
+      </section>
+
+      <section id="contact" class="contact wrap reveal">
+        <p class="eyebrow">03 / Let’s connect</p>
+        <h2>Have an idea worth<br /><em>building?</em></h2>
+        <a class="email" href="mailto:ifsnaag@gmail.com">ifsnaag@gmail.com <span>↗</span></a>
+        <p class="contact-note">Based in Tamil Nadu, India · Open to backend &amp; full-stack opportunities</p>
+      </section>
+    </main>
+    <footer class="wrap"><a class="brand" href="#top">NG<span>.</span></a><span>© <span id="year"></span> Nagarjun G</span><a href="#top">Back to top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
